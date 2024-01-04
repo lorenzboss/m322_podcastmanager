@@ -281,3 +281,39 @@
 .coverImageUpload {
     margin: auto;
 }
+
+.navPodcast {
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 20%;
+}
+
+.nav {
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #b4acac;
+    align-items: center;
+    text-align: center;
+}
+
+.navHeader {
+    background-color: #77c5ea;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 25%;
+}
+
+.section1 {
+    background-color: green;
+}
+
+.description {
+    background-color: blue;
+}
+
+.artists {
+    background-color: black;
+}
+

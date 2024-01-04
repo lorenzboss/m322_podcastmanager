@@ -3,10 +3,12 @@ package org.vaadin.example;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
-import com.vaadin.flow.component.html.*;
+import com.vaadin.flow.component.html.Div;
+import com.vaadin.flow.component.html.H1;
+import com.vaadin.flow.component.html.Image;
+import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.VaadinIcon;
-import com.vaadin.flow.component.orderedlayout.FlexLayout;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.Scroller;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -14,9 +16,6 @@ import com.vaadin.flow.component.textfield.TextArea;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.component.upload.Upload;
 import com.vaadin.flow.component.upload.receivers.MemoryBuffer;
-import com.vaadin.flow.component.virtuallist.VirtualList;
-import com.vaadin.flow.data.renderer.ComponentRenderer;
-import com.vaadin.flow.function.SerializableSupplier;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.StreamResource;
@@ -24,7 +23,6 @@ import elemental.json.Json;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Arrays;
 
 @Route("/add")
 @PageTitle("Add Podcast")
@@ -84,7 +82,7 @@ public class AddPodcast extends VerticalLayout {
         artistsListArtistRemoveButton1.setTooltipText("Delete Artist");
         artistsListArtistRemoveButton1.addClassName("artistsListArtistRemoveButton");
 
-        Image artistsListArtist1Image = new Image("/images/new/artist1.png", "");
+        Image artistsListArtist1Image = new Image("/images/new/artist1.jpeg", "");
         artistsListArtist1Image.addClassName("artistsListArtistImage");
 
         Paragraph artistsListArtist1Name = new Paragraph("Artist 1");
@@ -100,7 +98,7 @@ public class AddPodcast extends VerticalLayout {
         artistsListArtistRemoveButton2.setTooltipText("Delete Artist");
         artistsListArtistRemoveButton2.addClassName("artistsListArtistRemoveButton");
 
-        Image artistsListArtist2Image = new Image("/images/new/artist2.png", "");
+        Image artistsListArtist2Image = new Image("/images/new/artist2.jpeg", "");
         artistsListArtist2Image.addClassName("artistsListArtistImage");
 
         Paragraph artistsListArtist2Name = new Paragraph("Artist 2");
@@ -116,7 +114,7 @@ public class AddPodcast extends VerticalLayout {
         artistsListArtistRemoveButton3.setTooltipText("Delete Artist");
         artistsListArtistRemoveButton3.addClassName("artistsListArtistRemoveButton");
 
-        Image artistsListArtist3Image = new Image("/images/new/artist3.jpg", "");
+        Image artistsListArtist3Image = new Image("/images/new/artist3.jpeg", "");
         artistsListArtist3Image.addClassName("artistsListArtistImage");
 
         Paragraph artistsListArtist3Name = new Paragraph("Artist 3");
@@ -138,7 +136,7 @@ public class AddPodcast extends VerticalLayout {
 
         TextField createArtistInputField = new TextField("Name: ");
 
-        Image createArtistImage = new Image("/images/new/default.png", "");
+        Image createArtistImage = new Image("/images/new/default.jpeg", "");
         createArtistImage.addClassName("createArtistImage");
 
         Button createArtistButton = new Button("Add Artist", new Icon(VaadinIcon.PLUS));
@@ -186,7 +184,7 @@ public class AddPodcast extends VerticalLayout {
         Paragraph coverLabel = new Paragraph("Cover:");
         coverLabel.addClassName("coverLabel");
 
-        Image coverImage = new Image("/images/new/default.png", "");
+        Image coverImage = new Image("/images/new/default.jpeg", "");
         coverImage.addClassName("coverImage");
 
 

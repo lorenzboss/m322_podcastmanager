@@ -41,7 +41,7 @@ public class Homepage extends VerticalLayout {
         H2 aboutMeHeader = new H2("Über mich");
         aboutMeHeader.addClassName("aboutMeHeader");
 
-        Image aboutMeImage = new Image("/images/lorenz_bild.jpeg", "");
+        Image aboutMeImage = new Image("/images/lorenz.jpeg", "");
         aboutMeImage.addClassName("aboutMeImage");
 
         Paragraph aboutMeText = new Paragraph("Mein Name ist Lorenz Boss. Diese Seite ist ein Projekt, welches ich in der Schule BBZBL Pratteln (Baselland) erstellt habe.");
@@ -111,7 +111,7 @@ public class Homepage extends VerticalLayout {
         podcastsFooter.setHeight("20%");
 
 
-        Image podcastsOverviewPodcast1Image = new Image("/images/1/Podcast1.jpeg", "");
+        Image podcastsOverviewPodcast1Image = new Image("/images/1/cover.jpeg", "");
         podcastsOverviewPodcast1Image.addClassName("podcastsOverviewPodcast1Image");
 
         Paragraph podcastsOverviewPodcast1Text = new Paragraph("Podcast 1");
@@ -125,7 +125,7 @@ public class Homepage extends VerticalLayout {
         });
 
 
-        Image podcastsOverviewPodcast2Image = new Image("/images/2/Podcast2.jpeg", "");
+        Image podcastsOverviewPodcast2Image = new Image("/images/2/cover.jpeg", "");
         podcastsOverviewPodcast2Image.addClassName("podcastsOverviewPodcast2Image");
 
         Paragraph podcastsOverviewPodcast2Text = new Paragraph("Podcast 2");
@@ -135,7 +135,7 @@ public class Homepage extends VerticalLayout {
         podcastsOverviewPodcast2.addClassName("podcastsOverviewPodcast2");
 
 
-        Image podcastsOverviewPodcast3Image = new Image("/images/3/Podcast3.jpeg", "");
+        Image podcastsOverviewPodcast3Image = new Image("/images/3/cover.jpeg", "");
         podcastsOverviewPodcast3Image.addClassName("podcastsOverviewPodcast3Image");
 
         Paragraph podcastsOverviewPodcast3Text = new Paragraph("Podcast 3");
@@ -145,7 +145,7 @@ public class Homepage extends VerticalLayout {
         podcastsOverviewPodcast3.addClassName("podcastsOverviewPodcast3");
 
 
-        Image podcastsOverviewPodcast4Image = new Image("/images/4/Podcast4.jpeg", "");
+        Image podcastsOverviewPodcast4Image = new Image("/images/4/cover.jpeg", "");
         podcastsOverviewPodcast4Image.addClassName("podcastsOverviewPodcast4Image");
 
         Paragraph podcastsOverviewPodcast4Text = new Paragraph("Podcast 4");
@@ -155,7 +155,7 @@ public class Homepage extends VerticalLayout {
         podcastsOverviewPodcast4.addClassName("podcastsOverviewPodcast4");
 
 
-        Image podcastsOverviewPodcast5Image = new Image("/images/5/Podcast5.jpeg", "");
+        Image podcastsOverviewPodcast5Image = new Image("/images/5/cover.jpeg", "");
         podcastsOverviewPodcast5Image.addClassName("podcastsOverviewPodcast5Image");
 
         Paragraph podcastsOverviewPodcast5Text = new Paragraph("Podcast 5");
