@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@350&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mainView {
+    background: #abcdf1;
+    padding: 0;
+}
+
+.mainViewBox {
+    padding: 0;
+    margin: auto;
+    height: 100%;
+    max-width: calc(1.5 * 100vh);
+    border: 1px solid black;
+    background: #ffffff;
+}
+
+.headerLeft, .headerCenter, .headerRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerLeft, .headerRight {
+    width: 20%;
+}
+
+.headerCenter {
+    width: 60%;
+}
+
+.mainHeader {
+    font-size: 6vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.aboutMeImage {
+    width: 70%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 15%;
+    background-color: #77c5ea;
+}
+
+.homeIcon {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.homeIcon:hover {
+    transform: scale(1.3);
+}
+
+.aboutMeHeader {
+    font-size: 4vh;
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+.aboutMeText {
+    font-size: 2.5vh;
+    margin: 20px 0;
+}
+
+.aboutMe {
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #b4acac;
+    align-items: center;
+    text-align: center;
+}
+
+
+.podcastsOverview {
+    background-color: #837c7c;
+    border: 1px solid black;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.podcastsOverviewPodcast1, .podcastsOverviewPodcast2, .podcastsOverviewPodcast3, .podcastsOverviewPodcast4, .podcastsOverviewPodcast5 {
+    margin: 0 3.125%;
+    height: 40%;
+    width: 25%;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.podcastsOverviewPodcast1:hover, .podcastsOverviewPodcast2:hover, .podcastsOverviewPodcast3:hover, .podcastsOverviewPodcast4:hover, .podcastsOverviewPodcast5:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px;
+}
+
+.podcastsOverviewPodcast1Text, .podcastsOverviewPodcast2Text, .podcastsOverviewPodcast3Text, .podcastsOverviewPodcast4Text, .podcastsOverviewPodcast5Text {
+    margin: 0;
+    font-size: 2vh;
+}
+
+.podcastsOverviewPodcast1, .podcastsOverviewPodcast4 {
+    margin-left: 6.25%;
+}
+
+
+.podcastsOverviewPodcast1Image, .podcastsOverviewPodcast2Image, .podcastsOverviewPodcast3Image, .podcastsOverviewPodcast4Image, .podcastsOverviewPodcast5Image {
+    width: 80%;
+    border-radius: 10px;
+    margin: 3% 0 0;
+}
+
+.podcastsFooterMenu {
+    background-color: #b4acac;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.podcastsFooterLegalInfos {
+    background-color: #6e6a6a;
+    border-radius: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.podcastsFooterMenu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.podcastsFooterMenuTextInfo {
+    margin: 0;
+}
+
+
+.podcastsFooterMenuTextBox {
+    font-size: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.podcastsFooterLegalInfosIcons {
+    width: 50%;
+    margin: 4.5% auto 1.5% auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.podcastsFooterLegalInfosIconsIcon1, .podcastsFooterLegalInfosIconsIcon2, .podcastsFooterLegalInfosIconsIcon3 {
+    width: 19%;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.podcastsFooterLegalInfosIconsIcon1:hover, .podcastsFooterLegalInfosIconsIcon2:hover, .podcastsFooterLegalInfosIconsIcon3:hover {
+    transform: scale(1.3);
+}
+
+
+.podcastsFooterLegalInfosText {
+    font-size: 2vh;
+    margin: 0;
+}
+
+
+/* second page */
+
+.nameInputField {
+    label {
+        font-size: 3.5vh;
+    }
+
+    width: 100%;
+    font-size: 3vh;
+}
+
+.descriptionInputField {
+    label {
+        font-size: 3.5vh;
+    }
+
+    height: 100%;
+    width: 100%;
+    font-size: 2.5vh;
+}
+
+.artistsLabel, .coverLabel {
+    font-size: 3.5vh;
+    margin: 0;
+}
+
+.artistsSelection {
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 90%;
+}
+
+
+.artistsListArtistImage {
+    height: 4.5em;
+    border-radius: 50%;
+}
+
+.artistsListArtistName {
+    font-size: 2.5vh;
+    margin: auto;
+}
+
+.artistsListArtistRemoveButton {
+    margin: auto;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.artistsListArtist {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.artistsList {
+    border: 1px black solid;
+    border-radius: 10px;
+    height: 45%;
+}
+
+.createArtistImage {
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    margin-left: 5%;
+}
+
+.createArtist {
+    width: 100%;
+    align-items: end;
+    padding-right: 10%;
+}
+
+.createArtistButton {
+    height: 2.5em;
+}
+
+.coverImage {
+    width: 80%;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.csButton {
+    width: 45%;
+    height: 2.5em;
+    font-size: 2.5vh;
+    transition: transform 0.3s ease;
+}
+
+.csButton:hover {
+    transform: scale(1.1);
+}
+
+.buttons {
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.coverImageUpload {
+    margin: auto;
+}
