@@ -93,7 +93,7 @@
     width: 25%;
     text-align: center;
     transition: transform 0.3s ease;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .podcastsOverviewPodcast1:hover, .podcastsOverviewPodcast2:hover, .podcastsOverviewPodcast3:hover, .podcastsOverviewPodcast4:hover, .podcastsOverviewPodcast5:hover {
@@ -283,18 +283,23 @@
 }
 
 .navPodcast {
-    width: 70%;
+    width: 60%;
     border-radius: 10px;
-    margin-bottom: 20%;
+    transition: transform 0.2s ease;
+}
+
+.navPodcast:hover {
+    transform: scale(1.3);
 }
 
 .nav {
-    height: 100%;
+    height: 81%;
     border: 1px solid black;
     border-radius: 20px;
     background-color: #b4acac;
     align-items: center;
     text-align: center;
+    justify-content: space-evenly;
 }
 
 .navHeader {
@@ -302,18 +307,97 @@
     border-radius: 10px;
     padding: 10px;
     border: 1px solid black;
-    margin-bottom: 25%;
 }
 
-.section1 {
-    background-color: green;
+.section1{
+    padding: 0 1%;
+    height: 81%;
+}
+
+.cover {
+    width: 100%;
+    margin: 0 auto 8% auto;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.ratingUser {
+    width: 100%;
+    justify-content: center;
+}
+
+.interactiveStar {
+    color: #9f9c9c;
+    transition: color 0.3s ease;
+
+}
+
+.interactiveStar:hover {
+    color: white;
+}
+
+.staticStars {
+
+}
+
+.staticStars {
+    width: 70%;
+    justify-content: center;
+}
+
+.staticRating {
+    font-size: 1.5em;
+    margin-block-start: 0;
+}
+
+.ratingAudience {
+    width: 100%;
+    justify-content: center;
+}
+
+.rating {
+    width: 100%;
+    height: 100%;
+    background-color: #bff0bf;
+    border-radius: 20px;
+    border: 1px solid black;
+    justify-content: space-evenly;
+}
+
+.ratingHeader {
+    margin: auto;
+
+}
+
+.descriptionText {
+    font-size: 2.8vh;
 }
 
 .description {
-    background-color: blue;
+    background-color: #a3bbee;
+    border-radius: 20px;
+    border: 1px solid black;
+    height: 81%;
+    padding: 1%
 }
 
 .artists {
-    background-color: black;
+    align-items: center;
+    background-color: #bff0bf;
+    border-radius: 20px;
+    border: 1px solid black;
+    height: 81%;
+}
+
+.artistImage {
+    width: 60%;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.artistName {
+    font-size: 2.5vh;
+    margin: 0;
 }
 

@@ -70,8 +70,6 @@ public class AddPodcast extends VerticalLayout {
         VerticalLayout bodyLeft = new VerticalLayout(nameInputField, descriptionInputField);
 
 
-
-
         // bodyCenter
         Paragraph artistsLabel = new Paragraph("Artists:");
         artistsLabel.addClassName("artistsLabel");
@@ -179,7 +177,6 @@ public class AddPodcast extends VerticalLayout {
         bodyCenter.addClassName("bodyCenter");
 
 
-
         // BodyRight
         Paragraph coverLabel = new Paragraph("Cover:");
         coverLabel.addClassName("coverLabel");
@@ -229,7 +226,6 @@ public class AddPodcast extends VerticalLayout {
 
 
         VerticalLayout bodyRight = new VerticalLayout(coverLabel, coverImage, coverImageUpload, buttons);
-
 
 
         HorizontalLayout bodyContent = new HorizontalLayout(bodyLeft, bodyCenter, bodyRight);

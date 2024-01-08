@@ -37,7 +37,6 @@ public class Homepage extends VerticalLayout {
         header.addClassName("header");
 
 
-
         H2 aboutMeHeader = new H2("Über mich");
         aboutMeHeader.addClassName("aboutMeHeader");
 
@@ -50,8 +49,6 @@ public class Homepage extends VerticalLayout {
         VerticalLayout aboutMe = new VerticalLayout(aboutMeHeader, aboutMeImage, aboutMeText);
         aboutMe.setWidth("30%");
         aboutMe.addClassName("aboutMe");
-
-
 
 
         Paragraph podcastsFooterMenuTextInfo1 = new Paragraph("podcasts: 5");
@@ -68,8 +65,6 @@ public class Homepage extends VerticalLayout {
         Div podcastsFooterMenu = new Div(podcastsFooterMenuTextBox);
         podcastsFooterMenu.addClassName("podcastsFooterMenu");
         podcastsFooterMenu.setSizeFull();
-
-
 
 
         Image podcastsFooterLegalInfosIconsIcon1 = new Image("/icons/linkedin_icon.png", "");
@@ -103,9 +98,6 @@ public class Homepage extends VerticalLayout {
         podcastsFooterLegalInfos.setSizeFull();
 
 
-
-
-
         HorizontalLayout podcastsFooter = new HorizontalLayout(podcastsFooterMenu, podcastsFooterLegalInfos);
         podcastsFooter.setSizeFull();
         podcastsFooter.setHeight("20%");
@@ -121,7 +113,7 @@ public class Homepage extends VerticalLayout {
         podcastsOverviewPodcast1.addClassName("podcastsOverviewPodcast1");
 
         podcastsOverviewPodcast1.addClickListener(event -> {
-            getUI().ifPresent(ui -> ui.navigate(AddPodcast.class));
+            getUI().ifPresent(ui -> ui.navigate(Podcast1.class));
         });
 
 
@@ -165,20 +157,14 @@ public class Homepage extends VerticalLayout {
         podcastsOverviewPodcast5.addClassName("podcastsOverviewPodcast5");
 
 
-
-
         FlexLayout podcastsOverview = new FlexLayout(podcastsOverviewPodcast1, podcastsOverviewPodcast2, podcastsOverviewPodcast3, podcastsOverviewPodcast4, podcastsOverviewPodcast5);
         podcastsOverview.setFlexWrap(FlexLayout.FlexWrap.WRAP);
         podcastsOverview.addClassName("podcastsOverview");
         podcastsOverview.setSizeFull();
 
 
-
-
-
         VerticalLayout podcasts = new VerticalLayout(podcastsOverview, podcastsFooter);
         podcasts.setPadding(false);
-
 
 
         HorizontalLayout bodyContent = new HorizontalLayout(aboutMe, podcasts);
