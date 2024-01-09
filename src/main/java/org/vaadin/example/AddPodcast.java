@@ -64,7 +64,7 @@ public class AddPodcast extends VerticalLayout {
         TextArea nameInputField = new TextArea("Name:");
         nameInputField.addClassName("nameInputField");
 
-        TextArea descriptionInputField = new TextArea("Beschreibung:");
+        TextArea descriptionInputField = new TextArea("Description:");
         descriptionInputField.addClassName("descriptionInputField");
 
         VerticalLayout bodyLeft = new VerticalLayout(nameInputField, descriptionInputField);

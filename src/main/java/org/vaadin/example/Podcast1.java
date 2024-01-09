@@ -44,7 +44,7 @@ public class Podcast1 extends VerticalLayout {
         header.addClassName("header");
 
 
-        H3 navHeaderText = new H3("Weitere Podcasts");
+        H3 navHeaderText = new H3("more podcasts");
         navHeaderText.addClassName("navHeaderText");
 
         Div navHeader = new Div(navHeaderText);

@@ -37,13 +37,13 @@ public class Homepage extends VerticalLayout {
         header.addClassName("header");
 
 
-        H2 aboutMeHeader = new H2("Über mich");
+        H2 aboutMeHeader = new H2("About me");
         aboutMeHeader.addClassName("aboutMeHeader");
 
         Image aboutMeImage = new Image("/images/lorenz.jpeg", "");
         aboutMeImage.addClassName("aboutMeImage");
 
-        Paragraph aboutMeText = new Paragraph("Mein Name ist Lorenz Boss. Diese Webseite ist ein Projekt, welches ich in der Schule BBZBL Pratteln (Baselland) mit dem Vaadin Framework erstellt habe.");
+        Paragraph aboutMeText = new Paragraph("My name is Lorenz Boss. This website is a project that I created at the BBZBL school in Pratteln (Baselland) using the Vaadin framework.");
         aboutMeText.addClassName("aboutMeText");
 
         VerticalLayout aboutMe = new VerticalLayout(aboutMeHeader, aboutMeImage, aboutMeText);
@@ -55,7 +55,7 @@ public class Homepage extends VerticalLayout {
         podcastsFooterMenuTextInfo1.addClassName("podcastsFooterMenuTextInfo");
         Paragraph podcastsFooterMenuTextInfo2 = new Paragraph("max podcasts: 6");
         podcastsFooterMenuTextInfo2.addClassName("podcastsFooterMenuTextInfo");
-        RouterLink podcastsFooterMenuAddPodcast = new RouterLink("add Podcast", AddPodcast.class);
+        RouterLink podcastsFooterMenuAddPodcast = new RouterLink("add podcast", AddPodcast.class);
         podcastsFooterMenuAddPodcast.addClassName("podcastsFooterMenuTextInfo");
 
         Div podcastsFooterMenuTextBox = new Div(podcastsFooterMenuTextInfo1, podcastsFooterMenuTextInfo2, podcastsFooterMenuAddPodcast);
@@ -89,7 +89,7 @@ public class Homepage extends VerticalLayout {
         HorizontalLayout podcastsFooterLegalInfosIcons = new HorizontalLayout(podcastsFooterLegalInfosIconsIcon1, podcastsFooterLegalInfosIconsIcon2, podcastsFooterLegalInfosIconsIcon3);
         podcastsFooterLegalInfosIcons.addClassName("podcastsFooterLegalInfosIcons");
 
-        Paragraph podcastsFooterLegalInfosText = new Paragraph("Alle Rechte vorbehalten ©-2024 | Lorenz Boss");
+        Paragraph podcastsFooterLegalInfosText = new Paragraph("All rights reserved ©-2024 | Lorenz Boss");
         podcastsFooterLegalInfosText.addClassName("podcastsFooterLegalInfosText");
 
 
