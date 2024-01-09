@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * The entry point of the Spring Boot application.
- * <p>
  * Use the @PWA annotation make the application installable on phones, tablets
  * and some desktop browsers.
  */
@@ -20,5 +19,4 @@ public class Application implements AppShellConfigurator {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
-
 }
