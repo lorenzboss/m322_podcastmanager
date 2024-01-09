@@ -132,7 +132,7 @@ public class Podcast4 extends VerticalLayout {
         });
         interactiveStar1.getElement().addEventListener("mouseover", event -> {
             if (star1Clicked.get()) {
-                interactiveStar1.getStyle().set("color", "blue");
+                interactiveStar1.getStyle().set("color", "#fbe87a");
             }
         });
         interactiveStar1.getElement().addEventListener("mouseout", event -> {
@@ -155,8 +155,8 @@ public class Podcast4 extends VerticalLayout {
         });
         interactiveStar2.getElement().addEventListener("mouseover", event -> {
             if (star2Clicked.get()) {
-                interactiveStar1.getStyle().set("color", "blue");
-                interactiveStar2.getStyle().set("color", "blue");
+                interactiveStar1.getStyle().set("color", "#fbe87a");
+                interactiveStar2.getStyle().set("color", "#fbe87a");
             }
         });
         interactiveStar2.getElement().addEventListener("mouseout", event -> {
@@ -180,9 +180,9 @@ public class Podcast4 extends VerticalLayout {
         });
         interactiveStar3.getElement().addEventListener("mouseover", event -> {
             if (star3Clicked.get()) {
-                interactiveStar1.getStyle().set("color", "blue");
-                interactiveStar2.getStyle().set("color", "blue");
-                interactiveStar3.getStyle().set("color", "blue");
+                interactiveStar1.getStyle().set("color", "#fbe87a");
+                interactiveStar2.getStyle().set("color", "#fbe87a");
+                interactiveStar3.getStyle().set("color", "#fbe87a");
             }
         });
         interactiveStar3.getElement().addEventListener("mouseout", event -> {
@@ -207,10 +207,10 @@ public class Podcast4 extends VerticalLayout {
         });
         interactiveStar4.getElement().addEventListener("mouseover", event -> {
             if (star4Clicked.get()) {
-                interactiveStar1.getStyle().set("color", "blue");
-                interactiveStar2.getStyle().set("color", "blue");
-                interactiveStar3.getStyle().set("color", "blue");
-                interactiveStar4.getStyle().set("color", "blue");
+                interactiveStar1.getStyle().set("color", "#fbe87a");
+                interactiveStar2.getStyle().set("color", "#fbe87a");
+                interactiveStar3.getStyle().set("color", "#fbe87a");
+                interactiveStar4.getStyle().set("color", "#fbe87a");
             }
         });
         interactiveStar4.getElement().addEventListener("mouseout", event -> {
@@ -236,11 +236,11 @@ public class Podcast4 extends VerticalLayout {
         });
         interactiveStar5.getElement().addEventListener("mouseover", event -> {
             if (star5Clicked.get()) {
-                interactiveStar1.getStyle().set("color", "blue");
-                interactiveStar2.getStyle().set("color", "blue");
-                interactiveStar3.getStyle().set("color", "blue");
-                interactiveStar4.getStyle().set("color", "blue");
-                interactiveStar5.getStyle().set("color", "blue");
+                interactiveStar1.getStyle().set("color", "#fbe87a");
+                interactiveStar2.getStyle().set("color", "#fbe87a");
+                interactiveStar3.getStyle().set("color", "#fbe87a");
+                interactiveStar4.getStyle().set("color", "#fbe87a");
+                interactiveStar5.getStyle().set("color", "#fbe87a");
             }
         });
         interactiveStar5.getElement().addEventListener("mouseout", event -> {
