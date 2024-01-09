@@ -309,7 +309,7 @@
     border: 1px solid black;
 }
 
-.section1{
+.section1 {
     padding: 0 1%;
     height: 81%;
 }
@@ -328,16 +328,6 @@
 
 .interactiveStar {
     color: #9f9c9c;
-    transition: color 0.3s ease;
-
-}
-
-.interactiveStar:hover {
-    color: white;
-}
-
-.staticStars {
-
 }
 
 .staticStars {

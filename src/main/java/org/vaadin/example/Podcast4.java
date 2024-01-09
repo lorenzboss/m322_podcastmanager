@@ -8,6 +8,8 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
+import java.util.concurrent.atomic.AtomicBoolean;
+
 @Route("/podcast4")
 @PageTitle("Podcast4")
 public class Podcast4 extends VerticalLayout {
@@ -40,7 +42,6 @@ public class Podcast4 extends VerticalLayout {
 
         HorizontalLayout header = new HorizontalLayout(headerLeft, headerCenter, headerRight);
         header.addClassName("header");
-
 
         H3 navHeaderText = new H3("Weitere Podcasts");
         navHeaderText.addClassName("navHeaderText");
@@ -94,22 +95,163 @@ public class Podcast4 extends VerticalLayout {
         Icon interactiveStar1 = VaadinIcon.STAR.create();
         interactiveStar1.setSize("40px");
         interactiveStar1.addClassName("interactiveStar");
+        AtomicBoolean star1Clicked = new AtomicBoolean(true);
 
         Icon interactiveStar2 = VaadinIcon.STAR.create();
         interactiveStar2.setSize("40px");
         interactiveStar2.addClassName("interactiveStar");
+        AtomicBoolean star2Clicked = new AtomicBoolean(true);
 
         Icon interactiveStar3 = VaadinIcon.STAR.create();
         interactiveStar3.setSize("40px");
         interactiveStar3.addClassName("interactiveStar");
+        AtomicBoolean star3Clicked = new AtomicBoolean(true);
 
         Icon interactiveStar4 = VaadinIcon.STAR.create();
         interactiveStar4.setSize("40px");
         interactiveStar4.addClassName("interactiveStar");
+        AtomicBoolean star4Clicked = new AtomicBoolean(true);
 
         Icon interactiveStar5 = VaadinIcon.STAR.create();
         interactiveStar5.setSize("40px");
         interactiveStar5.addClassName("interactiveStar");
+        AtomicBoolean star5Clicked = new AtomicBoolean(true);
+
+
+        interactiveStar1.addClickListener(event -> {
+            star1Clicked.set(false);
+            star2Clicked.set(true);
+            star3Clicked.set(true);
+            star4Clicked.set(true);
+            star5Clicked.set(true);
+            interactiveStar1.getStyle().set("color", "orange");
+            interactiveStar2.getStyle().set("color", "#9f9c9c");
+            interactiveStar3.getStyle().set("color", "#9f9c9c");
+            interactiveStar4.getStyle().set("color", "#9f9c9c");
+            interactiveStar5.getStyle().set("color", "#9f9c9c");
+        });
+        interactiveStar1.getElement().addEventListener("mouseover", event -> {
+            if (star1Clicked.get()) {
+                interactiveStar1.getStyle().set("color", "blue");
+            }
+        });
+        interactiveStar1.getElement().addEventListener("mouseout", event -> {
+            if (star1Clicked.get()) {
+                interactiveStar1.getStyle().set("color", "#9f9c9c");
+            }
+        });
+
+        interactiveStar2.addClickListener(event -> {
+            star1Clicked.set(true);
+            star2Clicked.set(false);
+            star3Clicked.set(true);
+            star4Clicked.set(true);
+            star5Clicked.set(true);
+            interactiveStar1.getStyle().set("color", "orange");
+            interactiveStar2.getStyle().set("color", "orange");
+            interactiveStar3.getStyle().set("color", "#9f9c9c");
+            interactiveStar4.getStyle().set("color", "#9f9c9c");
+            interactiveStar5.getStyle().set("color", "#9f9c9c");
+        });
+        interactiveStar2.getElement().addEventListener("mouseover", event -> {
+            if (star2Clicked.get()) {
+                interactiveStar1.getStyle().set("color", "blue");
+                interactiveStar2.getStyle().set("color", "blue");
+            }
+        });
+        interactiveStar2.getElement().addEventListener("mouseout", event -> {
+            if (star2Clicked.get()) {
+                interactiveStar1.getStyle().set("color", "#9f9c9c");
+                interactiveStar2.getStyle().set("color", "#9f9c9c");
+            }
+        });
+
+        interactiveStar3.addClickListener(event -> {
+            star1Clicked.set(true);
+            star2Clicked.set(true);
+            star3Clicked.set(false);
+            star4Clicked.set(true);
+            star5Clicked.set(true);
+            interactiveStar1.getStyle().set("color", "orange");
+            interactiveStar2.getStyle().set("color", "orange");
+            interactiveStar3.getStyle().set("color", "orange");
+            interactiveStar4.getStyle().set("color", "#9f9c9c");
+            interactiveStar5.getStyle().set("color", "#9f9c9c");
+        });
+        interactiveStar3.getElement().addEventListener("mouseover", event -> {
+            if (star3Clicked.get()) {
+                interactiveStar1.getStyle().set("color", "blue");
+                interactiveStar2.getStyle().set("color", "blue");
+                interactiveStar3.getStyle().set("color", "blue");
+            }
+        });
+        interactiveStar3.getElement().addEventListener("mouseout", event -> {
+            if (star3Clicked.get()) {
+                interactiveStar1.getStyle().set("color", "#9f9c9c");
+                interactiveStar2.getStyle().set("color", "#9f9c9c");
+                interactiveStar3.getStyle().set("color", "#9f9c9c");
+            }
+        });
+
+        interactiveStar4.addClickListener(event -> {
+            star1Clicked.set(true);
+            star2Clicked.set(true);
+            star3Clicked.set(true);
+            star4Clicked.set(false);
+            star5Clicked.set(true);
+            interactiveStar1.getStyle().set("color", "orange");
+            interactiveStar2.getStyle().set("color", "orange");
+            interactiveStar3.getStyle().set("color", "orange");
+            interactiveStar4.getStyle().set("color", "orange");
+            interactiveStar5.getStyle().set("color", "#9f9c9c");
+        });
+        interactiveStar4.getElement().addEventListener("mouseover", event -> {
+            if (star4Clicked.get()) {
+                interactiveStar1.getStyle().set("color", "blue");
+                interactiveStar2.getStyle().set("color", "blue");
+                interactiveStar3.getStyle().set("color", "blue");
+                interactiveStar4.getStyle().set("color", "blue");
+            }
+        });
+        interactiveStar4.getElement().addEventListener("mouseout", event -> {
+            if (star4Clicked.get()) {
+                interactiveStar1.getStyle().set("color", "#9f9c9c");
+                interactiveStar2.getStyle().set("color", "#9f9c9c");
+                interactiveStar3.getStyle().set("color", "#9f9c9c");
+                interactiveStar4.getStyle().set("color", "#9f9c9c");
+            }
+        });
+
+        interactiveStar5.addClickListener(event -> {
+            star1Clicked.set(true);
+            star2Clicked.set(true);
+            star3Clicked.set(true);
+            star4Clicked.set(true);
+            star5Clicked.set(false);
+            interactiveStar1.getStyle().set("color", "orange");
+            interactiveStar2.getStyle().set("color", "orange");
+            interactiveStar3.getStyle().set("color", "orange");
+            interactiveStar4.getStyle().set("color", "orange");
+            interactiveStar5.getStyle().set("color", "orange");
+        });
+        interactiveStar5.getElement().addEventListener("mouseover", event -> {
+            if (star5Clicked.get()) {
+                interactiveStar1.getStyle().set("color", "blue");
+                interactiveStar2.getStyle().set("color", "blue");
+                interactiveStar3.getStyle().set("color", "blue");
+                interactiveStar4.getStyle().set("color", "blue");
+                interactiveStar5.getStyle().set("color", "blue");
+            }
+        });
+        interactiveStar5.getElement().addEventListener("mouseout", event -> {
+            if (star5Clicked.get()) {
+                interactiveStar1.getStyle().set("color", "#9f9c9c");
+                interactiveStar2.getStyle().set("color", "#9f9c9c");
+                interactiveStar3.getStyle().set("color", "#9f9c9c");
+                interactiveStar4.getStyle().set("color", "#9f9c9c");
+                interactiveStar5.getStyle().set("color", "#9f9c9c");
+            }
+        });
 
         HorizontalLayout ratingUser = new HorizontalLayout(interactiveStar1, interactiveStar2, interactiveStar3, interactiveStar4, interactiveStar5);
         ratingUser.addClassName("ratingUser");
@@ -134,6 +276,43 @@ public class Podcast4 extends VerticalLayout {
         Icon staticStar5 = VaadinIcon.STAR_HALF_LEFT_O.create();
         staticStar5.addClassName("staticStar");
         staticStar5.setSize("35px");
+
+        interactiveStar1.addClickListener(event -> {
+            interactiveStar1.setColor("orange");
+            interactiveStar2.setColor("#9f9c9c");
+            interactiveStar3.setColor("#9f9c9c");
+            interactiveStar4.setColor("#9f9c9c");
+            interactiveStar5.setColor("#9f9c9c");
+        });
+        interactiveStar2.addClickListener(event -> {
+            interactiveStar1.setColor("orange");
+            interactiveStar2.setColor("orange");
+            interactiveStar3.setColor("#9f9c9c");
+            interactiveStar4.setColor("#9f9c9c");
+            interactiveStar5.setColor("#9f9c9c");
+        });
+        interactiveStar3.addClickListener(event -> {
+            interactiveStar1.setColor("orange");
+            interactiveStar2.setColor("orange");
+            interactiveStar3.setColor("orange");
+            interactiveStar4.setColor("#9f9c9c");
+            interactiveStar5.setColor("#9f9c9c");
+        });
+        interactiveStar4.addClickListener(event -> {
+            interactiveStar1.setColor("orange");
+            interactiveStar2.setColor("orange");
+            interactiveStar3.setColor("orange");
+            interactiveStar4.setColor("orange");
+            interactiveStar5.setColor("#9f9c9c");
+        });
+
+        interactiveStar5.addClickListener(event -> {
+            interactiveStar1.setColor("orange");
+            interactiveStar2.setColor("orange");
+            interactiveStar3.setColor("orange");
+            interactiveStar4.setColor("orange");
+            interactiveStar5.setColor("orange");
+        });
 
         HorizontalLayout staticStars = new HorizontalLayout(staticStar1, staticStar2, staticStar3, staticStar4, staticStar5);
         staticStars.addClassName("staticStars");
