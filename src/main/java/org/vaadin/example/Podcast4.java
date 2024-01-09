@@ -8,18 +8,18 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
-@Route("/podcast1")
-@PageTitle("Podcast1")
-public class Podcast1 extends VerticalLayout {
+@Route("/podcast4")
+@PageTitle("Podcast4")
+public class Podcast4 extends VerticalLayout {
 
-    public Podcast1() {
+    public Podcast4() {
         addClassName("mainView");
         setSizeFull();
 
         Image vaadinIcon = new Image("/icons/vaadin_icon.png", "Vaadin Logo");
         vaadinIcon.setHeight("40%");
 
-        H1 mainHeader = new H1("Jay & Arya Podcast");
+        H1 mainHeader = new H1("Hobbylos");
         mainHeader.addClassName("mainHeader");
 
         Image homeIcon = new Image("/icons/home_icon.png", "Home Icon");
@@ -84,7 +84,7 @@ public class Podcast1 extends VerticalLayout {
         nav.addClassName("nav");
 
 
-        Image cover = new Image("/images/1/cover.jpeg", "");
+        Image cover = new Image("/images/4/cover.jpeg", "");
         cover.addClassName("cover");
 
 
@@ -131,14 +131,14 @@ public class Podcast1 extends VerticalLayout {
         staticStar4.addClassName("staticStar");
         staticStar4.setSize("35px");
 
-        Icon staticStar5 = VaadinIcon.STAR.create();
+        Icon staticStar5 = VaadinIcon.STAR_HALF_LEFT_O.create();
         staticStar5.addClassName("staticStar");
         staticStar5.setSize("35px");
 
         HorizontalLayout staticStars = new HorizontalLayout(staticStar1, staticStar2, staticStar3, staticStar4, staticStar5);
         staticStars.addClassName("staticStars");
 
-        Paragraph staticRating = new Paragraph("5.0");
+        Paragraph staticRating = new Paragraph("4.5");
         staticRating.addClassName("staticRating");
 
 
@@ -154,7 +154,7 @@ public class Podcast1 extends VerticalLayout {
         section1.addClassName("section1");
         section1.setWidth("30%");
 
-        Paragraph descriptionText = new Paragraph("Der Podcast, der von Jay Samuelz und Arya Lee gehostet wird, trägt den Titel \"Der eigentlich ganz gute Podcast\". In diesem unterhaltsamen Format tauschen sich die beiden Moderatoren über eine Vielzahl von Themen aus, die von persönlichen Erfahrungen über Popkultur bis hin zu gesellschaftlichen Fragestellungen reichen. Mit einer lockeren und humorvollen Art bieten Jay und Arya ihren Hörern einen Einblick in ihre Welt und schaffen eine angenehme Atmosphäre zum Zuhören.");
+        Paragraph descriptionText = new Paragraph("\"Hobbylos\" ist ein Spotify Original Podcast, der von Rezo und Julien Bam moderiert wird. Die beiden sprechen über verschiedene Themen aus ihrem Leben, wie zum Beispiel Therapie, Mathematik, Politik und soziale Medien. Der Podcast ist humorvoll und unterhaltsam und bietet auch gelegentlich musikalische Einlagen. Die Episoden sind ungefähr eine Stunde lang und werden jeden Samstag veröffentlicht. Der Podcast ist auf Spotify verfügbar");
         descriptionText.addClassName("descriptionText");
 
         HorizontalLayout description = new HorizontalLayout(descriptionText);
@@ -165,16 +165,16 @@ public class Podcast1 extends VerticalLayout {
         H2 artistsHeader = new H2("Artists");
         artistsHeader.getStyle().set("margin", "10%");
 
-        Image artist1Image = new Image("/images/1/artist1.jpeg", "");
+        Image artist1Image = new Image("/images/4/artist1.jpeg", "");
         artist1Image.addClassName("artistImage");
 
-        Paragraph artist1Name = new Paragraph("Jay Samuelz");
+        Paragraph artist1Name = new Paragraph("Julien Bam");
         artist1Name.addClassName("artistName");
 
-        Image artist2Image = new Image("/images/1/artist2.jpeg", "");
+        Image artist2Image = new Image("/images/4/artist2.jpeg", "");
         artist2Image.addClassName("artistImage");
 
-        Paragraph artist2Name = new Paragraph("Arya Lee");
+        Paragraph artist2Name = new Paragraph("Rezo");
         artist2Name.addClassName("artistName");
 
         VerticalLayout artists = new VerticalLayout(artistsHeader, artist1Image, artist1Name, artist2Image, artist2Name);

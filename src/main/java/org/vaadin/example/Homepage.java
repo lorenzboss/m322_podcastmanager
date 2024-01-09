@@ -43,7 +43,7 @@ public class Homepage extends VerticalLayout {
         Image aboutMeImage = new Image("/images/lorenz.jpeg", "");
         aboutMeImage.addClassName("aboutMeImage");
 
-        Paragraph aboutMeText = new Paragraph("Mein Name ist Lorenz Boss. Diese Seite ist ein Projekt, welches ich in der Schule BBZBL Pratteln (Baselland) erstellt habe.");
+        Paragraph aboutMeText = new Paragraph("Mein Name ist Lorenz Boss. Diese Webseite ist ein Projekt, welches ich in der Schule BBZBL Pratteln (Baselland) mit dem Vaadin Framework erstellt habe.");
         aboutMeText.addClassName("aboutMeText");
 
         VerticalLayout aboutMe = new VerticalLayout(aboutMeHeader, aboutMeImage, aboutMeText);
@@ -106,21 +106,16 @@ public class Homepage extends VerticalLayout {
         Image podcastsOverviewPodcast1Image = new Image("/images/1/cover.jpeg", "");
         podcastsOverviewPodcast1Image.addClassName("podcastsOverviewPodcast1Image");
 
-        Paragraph podcastsOverviewPodcast1Text = new Paragraph("Podcast 1");
+        Paragraph podcastsOverviewPodcast1Text = new Paragraph("Jay & Arya Podcast");
         podcastsOverviewPodcast1Text.addClassName("podcastsOverviewPodcast1Text");
 
         Div podcastsOverviewPodcast1 = new Div(podcastsOverviewPodcast1Image, podcastsOverviewPodcast1Text);
         podcastsOverviewPodcast1.addClassName("podcastsOverviewPodcast1");
 
-        podcastsOverviewPodcast1.addClickListener(event -> {
-            getUI().ifPresent(ui -> ui.navigate(Podcast1.class));
-        });
-
-
         Image podcastsOverviewPodcast2Image = new Image("/images/2/cover.jpeg", "");
         podcastsOverviewPodcast2Image.addClassName("podcastsOverviewPodcast2Image");
 
-        Paragraph podcastsOverviewPodcast2Text = new Paragraph("Podcast 2");
+        Paragraph podcastsOverviewPodcast2Text = new Paragraph("The Diary Of A CEO");
         podcastsOverviewPodcast2Text.addClassName("podcastsOverviewPodcast2Text");
 
         Div podcastsOverviewPodcast2 = new Div(podcastsOverviewPodcast2Image, podcastsOverviewPodcast2Text);
@@ -130,7 +125,7 @@ public class Homepage extends VerticalLayout {
         Image podcastsOverviewPodcast3Image = new Image("/images/3/cover.jpeg", "");
         podcastsOverviewPodcast3Image.addClassName("podcastsOverviewPodcast3Image");
 
-        Paragraph podcastsOverviewPodcast3Text = new Paragraph("Podcast 3");
+        Paragraph podcastsOverviewPodcast3Text = new Paragraph("Gemischtes Hack");
         podcastsOverviewPodcast3Text.addClassName("podcastsOverviewPodcast3Text");
 
         Div podcastsOverviewPodcast3 = new Div(podcastsOverviewPodcast3Image, podcastsOverviewPodcast3Text);
@@ -140,7 +135,7 @@ public class Homepage extends VerticalLayout {
         Image podcastsOverviewPodcast4Image = new Image("/images/4/cover.jpeg", "");
         podcastsOverviewPodcast4Image.addClassName("podcastsOverviewPodcast4Image");
 
-        Paragraph podcastsOverviewPodcast4Text = new Paragraph("Podcast 4");
+        Paragraph podcastsOverviewPodcast4Text = new Paragraph("Hobbylos");
         podcastsOverviewPodcast4Text.addClassName("podcastsOverviewPodcast4Text");
 
         Div podcastsOverviewPodcast4 = new Div(podcastsOverviewPodcast4Image, podcastsOverviewPodcast4Text);
@@ -150,11 +145,27 @@ public class Homepage extends VerticalLayout {
         Image podcastsOverviewPodcast5Image = new Image("/images/5/cover.jpeg", "");
         podcastsOverviewPodcast5Image.addClassName("podcastsOverviewPodcast5Image");
 
-        Paragraph podcastsOverviewPodcast5Text = new Paragraph("Podcast 5");
+        Paragraph podcastsOverviewPodcast5Text = new Paragraph("5 Minuten Harry Podcast");
         podcastsOverviewPodcast5Text.addClassName("podcastsOverviewPodcast5Text");
 
         Div podcastsOverviewPodcast5 = new Div(podcastsOverviewPodcast5Image, podcastsOverviewPodcast5Text);
         podcastsOverviewPodcast5.addClassName("podcastsOverviewPodcast5");
+
+        podcastsOverviewPodcast1.addClickListener(event -> {
+            getUI().ifPresent(ui -> ui.navigate(Podcast1.class));
+        });
+        podcastsOverviewPodcast2.addClickListener(event -> {
+            getUI().ifPresent(ui -> ui.navigate(Podcast2.class));
+        });
+        podcastsOverviewPodcast3.addClickListener(event -> {
+            getUI().ifPresent(ui -> ui.navigate(Podcast3.class));
+        });
+        podcastsOverviewPodcast4.addClickListener(event -> {
+            getUI().ifPresent(ui -> ui.navigate(Podcast4.class));
+        });
+        podcastsOverviewPodcast5.addClickListener(event -> {
+            getUI().ifPresent(ui -> ui.navigate(Podcast5.class));
+        });
 
 
         FlexLayout podcastsOverview = new FlexLayout(podcastsOverviewPodcast1, podcastsOverviewPodcast2, podcastsOverviewPodcast3, podcastsOverviewPodcast4, podcastsOverviewPodcast5);

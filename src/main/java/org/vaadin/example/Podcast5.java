@@ -8,18 +8,18 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
-@Route("/podcast1")
-@PageTitle("Podcast1")
-public class Podcast1 extends VerticalLayout {
+@Route("/podcast5")
+@PageTitle("Podcast5")
+public class Podcast5 extends VerticalLayout {
 
-    public Podcast1() {
+    public Podcast5() {
         addClassName("mainView");
         setSizeFull();
 
         Image vaadinIcon = new Image("/icons/vaadin_icon.png", "Vaadin Logo");
         vaadinIcon.setHeight("40%");
 
-        H1 mainHeader = new H1("Jay & Arya Podcast");
+        H1 mainHeader = new H1("5 Minuten Harry Podcast");
         mainHeader.addClassName("mainHeader");
 
         Image homeIcon = new Image("/icons/home_icon.png", "Home Icon");
@@ -84,7 +84,7 @@ public class Podcast1 extends VerticalLayout {
         nav.addClassName("nav");
 
 
-        Image cover = new Image("/images/1/cover.jpeg", "");
+        Image cover = new Image("/images/5/cover.jpeg", "");
         cover.addClassName("cover");
 
 
@@ -154,7 +154,7 @@ public class Podcast1 extends VerticalLayout {
         section1.addClassName("section1");
         section1.setWidth("30%");
 
-        Paragraph descriptionText = new Paragraph("Der Podcast, der von Jay Samuelz und Arya Lee gehostet wird, trägt den Titel \"Der eigentlich ganz gute Podcast\". In diesem unterhaltsamen Format tauschen sich die beiden Moderatoren über eine Vielzahl von Themen aus, die von persönlichen Erfahrungen über Popkultur bis hin zu gesellschaftlichen Fragestellungen reichen. Mit einer lockeren und humorvollen Art bieten Jay und Arya ihren Hörern einen Einblick in ihre Welt und schaffen eine angenehme Atmosphäre zum Zuhören.");
+        Paragraph descriptionText = new Paragraph("Der 5 Minuten Harry Podcast von Coldmirror ist ein Podcast, in dem Coldmirror jeweils fünf Minuten des Films “Harry Potter und der Stein der Weisen” nimmt und bis ins kleinste Detail analysiert und bespricht. Der Podcast ist auf Apple Podcasts und Spotify verfügbar . Coldmirror ist seit dem 29.09.2016 Teil von #funk. Auf YouTube gibt es eine Playlist mit allen Teilen des Podcasts, dort sind die Videos mit entsprechenden Standbildern untermalt.");
         descriptionText.addClassName("descriptionText");
 
         HorizontalLayout description = new HorizontalLayout(descriptionText);
@@ -165,19 +165,13 @@ public class Podcast1 extends VerticalLayout {
         H2 artistsHeader = new H2("Artists");
         artistsHeader.getStyle().set("margin", "10%");
 
-        Image artist1Image = new Image("/images/1/artist1.jpeg", "");
+        Image artist1Image = new Image("/images/5/artist1.jpeg", "");
         artist1Image.addClassName("artistImage");
 
-        Paragraph artist1Name = new Paragraph("Jay Samuelz");
+        Paragraph artist1Name = new Paragraph("Coldmirror");
         artist1Name.addClassName("artistName");
 
-        Image artist2Image = new Image("/images/1/artist2.jpeg", "");
-        artist2Image.addClassName("artistImage");
-
-        Paragraph artist2Name = new Paragraph("Arya Lee");
-        artist2Name.addClassName("artistName");
-
-        VerticalLayout artists = new VerticalLayout(artistsHeader, artist1Image, artist1Name, artist2Image, artist2Name);
+        VerticalLayout artists = new VerticalLayout(artistsHeader, artist1Image, artist1Name);
         artists.addClassName("artists");
         artists.setWidth("20%");
 
