@@ -261,23 +261,23 @@ public class Podcast3 extends VerticalLayout {
 
         Icon staticStar1 = VaadinIcon.STAR.create();
         staticStar1.addClassName("staticStar");
-        staticStar1.setSize("35px");
+        staticStar1.setSize("30px");
 
         Icon staticStar2 = VaadinIcon.STAR.create();
         staticStar2.addClassName("staticStar");
-        staticStar2.setSize("35px");
+        staticStar2.setSize("30px");
 
         Icon staticStar3 = VaadinIcon.STAR.create();
         staticStar3.addClassName("staticStar");
-        staticStar3.setSize("35px");
+        staticStar3.setSize("30px");
 
         Icon staticStar4 = VaadinIcon.STAR.create();
         staticStar4.addClassName("staticStar");
-        staticStar4.setSize("35px");
+        staticStar4.setSize("30px");
 
         Icon staticStar5 = VaadinIcon.STAR_HALF_LEFT_O.create();
         staticStar5.addClassName("staticStar");
-        staticStar5.setSize("35px");
+        staticStar5.setSize("30px");
 
         HorizontalLayout staticStars = new HorizontalLayout(staticStar1, staticStar2, staticStar3, staticStar4, staticStar5);
         staticStars.addClassName("staticStars");

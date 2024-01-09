@@ -164,7 +164,7 @@ public class AddPodcast extends VerticalLayout {
         });
 
         createArtistButton.addClickListener(event -> {
-            createArtistImage.getElement().setAttribute("src", "/images/new/default.png");
+            createArtistImage.getElement().setAttribute("src", "/images/new/default.jpeg");
             createArtistImageUpload.getElement().setPropertyJson("files", Json.createArray());
             createArtistInputField.clear();
         });
